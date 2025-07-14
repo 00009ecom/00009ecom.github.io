@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+img {
+  filter: grayscale(100%) !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'EB Garamond', serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+  margin: 0;
+}
+
+#intro {
+  max-width: 500px;
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+h1, h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  color: #000;
+}
+
+main > section {
+  text-align: left;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-end; /* or remove this line if unwanted */
+}
+
+.project .image-frame {
+  width: 400px;
+  overflow: hidden;
+}
+
+.project .image-wrapper {
+  width: 800px; /* 2 images × 400px */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.project .image-wrapper img {
+  width: 400px;
+  flex-shrink: 0;
+  object-fit: cover;
+  filter: grayscale(100%);
+  user-select: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.project:hover .image-wrapper {
+  transform: translateX(-400px);
+}
+
+
+.project video {
+  max-height: 200px;    /* limit vertical height */
+  width: auto;          /* scale width proportionally */
+  max-width: 100%;      /* never overflow container */
+  object-fit: cover;
+  filter: grayscale(100%);
+  border-radius: 0;
+  box-shadow: none;
+  user-select: none;
+  cursor: pointer;
+}
+footer {
+  text-align: left;
+  padding: 1rem 0 1rem 1rem; /* top 1rem, right 0, bottom 1rem, left 2rem */
+  font-size: 0.9rem;
+  color: #555;
+}
