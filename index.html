@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Jones – 00009ecom</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+      background-color: #fff;
+      color: #000;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    main {
+      padding: 2rem;
+      margin: 0;
+    }
+
+    #intro {
+      max-width: 500px;
+      margin: 0 0 2rem 0;
+      text-align: left;
+    }
+
+    h1, h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0 0 1rem 0;
+      color: #000;
+    }
+
+    main > section {
+      text-align: left;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: flex-end;
+    }
+
+    .project {
+      display: flex;
+      align-items: center;
+      max-width: 700px;
+      gap: 1.5rem;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .project p {
+      flex-shrink: 0;
+      width: 150px; /* fixed width for project title on left */
+      margin: 0;
+      font-weight: 400;
+      color: #000;
+    }
+
+    /* The visible frame container */
+    .image-frame {
+      width: 400px;       /* show only one image width */
+      overflow: hidden;   /* hide overflow */
+    }
+
+    /* The sliding container holding images side by side */
+    .project .image-wrapper {
+      width: 800px;       /* 2 images × 400px */
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    .project .image-wrapper img {
+      width: 400px;
+      flex-shrink: 0;
+      object-fit: cover;
+      filter: grayscale(100%);
+      user-select: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    /* Slide left one image width on hover */
+    .project:hover .image-wrapper {
+      transform: translateX(-400px);
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    /* Responsive for tablets and phones */
+    @media (max-width: 768px) {
+      .grid {
+        align-items: stretch;
+      }
+      .project {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .project p {
+        width: auto;
+        margin-bottom: 0.5rem;
+      }
+      .image-frame {
+        width: 100%;
+      }
+      .project .image-wrapper {
+        width: 200%; /* double width for two images */
+      }
+      .project .image-wrapper img {
+        width: 50%; /* half width so two images fit */
+      }
+      .project:hover .image-wrapper {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="intro">
+      <h1>00009e</h1>
+      <p>
+        Anna Jones is a multidisciplinary artist whose work exists at the intersection of Art Direction, graphic language, and garment construction, with formal studies in both graphic design and fine art. Please send all inquiries
+        <a href="mailto:00009ecom@gmail.com">here</a>.
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="grid">
+		  
+		  
+		  
+        <div class="project">
+          <p>00009ecom <u>2025</u></p>
+          <div class="image-frame">
+            <div class="image-wrapper">
+              <img src="images/00009e.gif" alt="00009ecom GIF" />
+              <img src="images/00009e3.gif" alt="00009ecom GIF" />
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <p>Still Life <u>2025</u></p>
+          <div class="image-frame">
+            <div class="image-wrapper">
+              <img src="images/lemon2.jpg" alt="Still Life of a Lemon" />
+              <img src="images/lemon1.jpg" alt="Still Life of a Lemon" />
+            </div>
+          </div>
+        </div>
+		  
+		
+		  
+		  
+		  
+
+        <div class="project">
+          <p>Most Rejected x 00009ecom <u>2023</u></p>
+          <div class="image-frame">
+            <div class="image-wrapper">
+              <img src="images/ally.jpg" alt="Exhibition Design" />
+              <img src="images/ally2.jpg" alt="Exhibition Design" />
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="project">
+          <p>BA Fine Art Exhibition <u>2022</u></p>
+          <div class="image-frame">
+            <div class="image-wrapper">
+              <img src="images/lamb.png" alt="Lamb Taxidermy" />
+              <img src="images/chastitybelt.jpg" alt="Metal Handcrafted Chastity Belt" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="graphicdesign">
+      <h2>Graphic Design</h2>
+      <div class="grid">
+        <div class="project">
+          <p>Seraphim Logo Design <u>2024</u></p>
+          <div class="image-frame">
+            <div class="image-wrapper">
+              <img src="images/seraphimlogo-01.png" alt="Seraphim Logo" />
+              <img src="images/seraphimlogo-02.png" alt="Seraphim Logo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <p>Juried Alumni Exhibition Design<u>2023</u></p>
+          <div class="image-frame">
+            <div class="image-wrapper">
+              <img src="images/juriedalumni01.png" alt="Exhibition Design" />
+              <img src="images/juriedalumni02.png" alt="Exhibition Design" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p>
+        Contact: <a href="mailto:00009ecom@gmail.com">00009ecom@gmail.com</a> ·
+        <a href="https://instagram.com/00009ecom">@00009ecom</a>
+      </p>
+    </section>
+  </main>
+</body>
+	
+	<footer>
+  &copy; 2025 Anna Jones. All rights reserved.
+</footer>
+
+
+</html>
